@@ -17,10 +17,8 @@ public class Main {
         n = 2;
         Random random = new Random();
         i = new Random().nextInt(2000);
+        n = Integer.toBinaryString(i).length();
         System.out.println("i = " + i);
-        while(n < i/2) {
-            n *= 2;
-        }
         System.out.println("n = " + n);
         System.out.println("Short.MAX_VALUE:  " + Short.MAX_VALUE);
         System.out.println("Short.MIN_VALUE: " + Short.MIN_VALUE);
