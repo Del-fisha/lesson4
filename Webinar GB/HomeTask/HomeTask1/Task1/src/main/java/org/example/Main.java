@@ -49,7 +49,5 @@ public class Main {
         System.out.println("Все некратные n числа в диапазоне от Short.MIN_VALUE до i в массиве:");
         System.out.println(Arrays.toString(m2));
 
-        System.out.println(m1.length);
-        System.out.println(m2.length);
         }
     }
