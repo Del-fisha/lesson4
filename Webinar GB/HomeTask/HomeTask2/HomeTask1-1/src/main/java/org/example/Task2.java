@@ -11,7 +11,6 @@ public class Task2 {
             }
             if(j == i){
                 System.out.print(i + ", ");
-                i = 0;
             }
         }
     }
