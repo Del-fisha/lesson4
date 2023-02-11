@@ -1,3 +1,5 @@
+//1. Вычислить n-ое треугольного числа(сумма чисел от 1 до n), n!
+//(произведение чисел от 1 до n)
 import java.util.Scanner;
 public class Main {
 
@@ -5,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число: ");
         int number = scanner.nextInt();
-        int sum = TriangleSum(number), mult = TriangleMult(number);
+        long sum = TriangleSum(number), mult = TriangleMult(number);
 
         if (isTriangular(number)){
             System.out.println("Число " + number + " является треугольным");
@@ -15,7 +17,7 @@ public class Main {
         else System.out.println("Число " + number + " НЕ является треугольным");
 
     }
-    static boolean isTriangular(int num) {
+    static boolean isTriangular(int num) { //Функция проверки введённого числа на треугольность
         if (num < 0) return false;
         int sum = 0, n = 1;
         for (int i = 1; sum <= num; i++) {
@@ -24,13 +26,13 @@ public class Main {
         }
         return false;
     }
-    public static int TriangleSum(int num) {
+    public static int TriangleSum(int num) { // Функция поиска суммы чисел до треугольного числа
         if (num == 1) {
             return 1;
         }
         return TriangleSum(num - 1) + num;
     }
-    public static int TriangleMult(int num) {
+    public static int TriangleMult(int num) { // Функция поиска произведения чисел до треугольного числа
         if (num == 1) {
             return 1;
         }
