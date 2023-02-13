@@ -25,7 +25,9 @@ public class Calculator {
         System.out.println(num1 + " - " + num2 + " = " + (num1-num2));
     }
     static void quot(int num1, int num2){
-        System.out.println(num1 + " : " + num2 + " = " + (num1/num2));
+        Double dub1 = Double.valueOf(num1);
+        Double dub2 = Double.valueOf(num2);
+        System.out.println(num1 + " : " + num2 + " = " + (dub1/dub2));
     }
     static void multiplication(int num1, int num2){
         System.out.println(num1 + " x " + num2 + " = " + (num1*num2));
