@@ -12,7 +12,7 @@ public class Second {
         StringBuilder second = new StringBuilder(scan.nextLine()).reverse();
 
 
-        if(second.indexOf(String.valueOf(first)) >= 0) {System.out.println("Вхождение в обратном порядке присутствует!");}
+        if(second.indexOf(String.valueOf(first)) == 0) {System.out.println("Вхождение в обратном порядке присутствует!");}
         else {System.out.println("Вхождение в обратном порядке отсутствует!");}
     }
 }
