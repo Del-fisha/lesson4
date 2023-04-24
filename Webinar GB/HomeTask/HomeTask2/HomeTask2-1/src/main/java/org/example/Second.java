@@ -1,6 +1,6 @@
 //Напишите программу, чтобы проверить, являются ли две данные строки вращением друг друга (вхождение в обратном порядке)
-package org.example;
 
+package org.example;
 import java.util.Scanner;
 
 public class Second {
